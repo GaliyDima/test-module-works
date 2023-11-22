@@ -1,0 +1,35 @@
+.list {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+.list-item {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: #f0f0f0;
+}
+
+.list-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.new-todo {
+  color: red;
+  padding-left: 15px;
+}
+
+@media (max-width: 1000px) {
+  .list {
+    width: 500px;
+  }
+
+  .list-item {
+    padding: 8px 0;
+  }
+}
